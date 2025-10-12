@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Horizontal marquee animation for Services */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Utility classes for the marquee track */
+.animate-marquee {
+  animation: marquee-left 30s linear infinite;
+}
+
+/* Pause on hover */
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Also pause when focus is inside the group (for keyboard users) */
+.group:focus-within .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Hide native scrollbar while keeping scrollability */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar { /* Chrome, Safari */
+  display: none;
+}
