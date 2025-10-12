@@ -41,7 +41,7 @@ export default function Hero({ title, tagline, heroText }) {
                 <a href="#get-started" className="inline-flex items-center rounded-full bg-[#f5c518] px-6 py-3 text-black font-semibold shadow-[0_0_30px_rgba(245,197,24,0.25)] hover:bg-[#ffd34d] transition">
                   Start Your Project
                 </a>
-                <a href="#services" className="inline-flex items-center rounded-full bg-[#f5c518] px-6 py-3 text-black font-semibold shadow-[0_0_30px_rgba(245,197,24,0.2)] hover:bg-[#ffd34d] transition">
+                <a href="#services" className="inline-flex items-center rounded-full bg-transparent px-6 py-3 text-[#f5c518] hover:text-black border-[#f5c518] border-2 font-semibold shadow-[0_0_30px_rgba(245,197,24,0.2)] hover:bg-[#ffd34d] transition">
                   View Our Work
                 </a>
               </div>
