@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Intro from '../../components/users/sections/Intro';
 import Hero from '../../components/users/sections/Hero';
 import About from '../../components/users/sections/About';
 import Services from '../../components/users/sections/Services';
@@ -21,6 +22,7 @@ export default function Home() {
 
   return (
     <div>
+      <Intro />
       <Hero title={site?.title} tagline={site?.tagline} heroText={hero} />
       <About />
       <Services />

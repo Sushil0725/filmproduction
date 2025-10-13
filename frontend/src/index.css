@@ -34,3 +34,50 @@ html {
 .no-scrollbar::-webkit-scrollbar { /* Chrome, Safari */
   display: none;
 }
+
+/* Intro component styles */
+.text-gold {
+  color: #f5c518;
+}
+
+/* Film grain effect */
+.intro-filmgrain {
+  background-image: 
+    radial-gradient(circle at 20% 50%, transparent 20%, rgba(255,255,255,0.05) 21%, rgba(255,255,255,0.05) 34%, transparent 35%, transparent),
+    linear-gradient(0deg, rgba(34,34,34,0.1) 50%, transparent 50%);
+  background-size: 4px 4px, 100% 2px;
+  animation: filmgrain 0.2s infinite;
+}
+
+@keyframes filmgrain {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Lock body scroll during intro */
+body.intro-lock {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Intro animations */
+.intro-logo {
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.intro-tagline {
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

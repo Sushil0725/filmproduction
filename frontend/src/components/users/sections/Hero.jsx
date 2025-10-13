@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import herobg from '../../../assets/herobg.mp4';
 
 export default function Hero({ title, tagline, heroText }) {
   const headline = title || 'MB Pictures Canada Inc.';
-  const sub = tagline || 'Canada’s Complete Film & Media Production House';
+  const sub = tagline || "Canada's Complete Film & Media Production House";
   const desc = heroText || 'Nationwide Movie Production • Line Production • Post Production • Distribution';
+  
+  const videoRef = useRef(null);
+
+  const handlePlayButtonHover = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
+
+  const handlePlayButtonLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
   return (
-    <section id="home" className="relative h-screen">
+    <section id="home" className="relative h-screen select-none">
       {/* Fixed pinned hero underneath other content */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         {/* Background video from assets */}
         <video
+          ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
           src={herobg}
           autoPlay
@@ -47,8 +62,12 @@ export default function Hero({ title, tagline, heroText }) {
               </div>
             </div>
             <div className="hidden md:flex md:col-span-4 justify-center">
-              <div className="relative w-30 h-30 rounded-full bg-[#c6a300] shadow-[0_0_60px_rgba(245,197,24,0.25)] flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-20 h-20 fill-black hover:scale-130 transition-all duration-300 translate-x-1" aria-hidden="true">
+              <div 
+                className="relative w-20 h-20 rounded-full bg-[#c6a300] shadow-[0_0_40px_rgba(245,197,24,0.25)] flex items-center justify-center cursor-pointer hover:shadow-[0_0_60px_rgba(245,197,24,0.4)] hover:bg-[#f5c518] transition-all duration-300"
+                onMouseEnter={handlePlayButtonHover}
+                onMouseLeave={handlePlayButtonLeave}
+              >
+                <svg viewBox="0 0 24 24" className="w-12 h-12 fill-black hover:scale-110 transition-all duration-300 translate-x-0.5" aria-hidden="true">
                   <path d="M8 6v12l10-6-10-6z" />
                 </svg>
               </div>
