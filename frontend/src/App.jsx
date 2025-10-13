@@ -10,6 +10,7 @@ import Admin from './pages/admin/Admin';
 import NotFound from './NotFound';
 import ProtectedRoute from './common/ProtectedRoute';
 import UserLayout from './layouts/users/UserLayout';
+import AdminLayout from './layouts/admin/AdminLayout.jsx';
 
 export default function App() {
   return (
@@ -24,7 +25,9 @@ export default function App() {
         </Route>
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}> 
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Admin />} />
+          </Route>
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
