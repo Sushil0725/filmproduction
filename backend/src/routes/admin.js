@@ -5,6 +5,8 @@ const fs = require('fs');
 const { requireAuth } = require('../middleware/auth');
 const { writeText, writeJSON, listBasenames, sanitizeName } = require('../utils/fileStore');
 const config = require('../config');
+const projectsCtrl = require('../controllers/projects');
+const servicesCtrl = require('../controllers/services');
 
 const router = express.Router();
 
@@ -12,7 +14,7 @@ const router = express.Router();
 router.use(requireAuth);
 
 // Multer storage for uploads
-const storage = multer.diskStorage({
+const storageLocal = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadDir = path.join(config.dataDir, 'uploads');
     fs.mkdirSync(uploadDir, { recursive: true });
@@ -27,7 +29,8 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage });
+const uploadLocal = multer({ storage: storageLocal });
+const uploadMemory = multer({ storage: multer.memoryStorage() });
 
 // Save plain text content
 router.put('/text/:name', express.text({ type: ['text/*', 'text/plain'], limit: '1mb' }), async (req, res) => {
@@ -55,7 +58,7 @@ router.put('/json/:name', async (req, res) => {
 });
 
 // Upload a file
-router.post('/upload', upload.single('file'), (req, res) => {
+router.post('/upload', uploadLocal.single('file'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'file required' });
   const fileUrl = `/uploads/${req.file.filename}`;
   res.json({ ok: true, filename: req.file.filename, url: fileUrl });
@@ -76,5 +79,15 @@ router.get('/list', async (req, res) => {
     res.json({ text: texts, json: jsons, uploads: [] });
   }
 });
+
+router.get('/projects', projectsCtrl.listAdmin);
+router.post('/projects', uploadMemory.single('image'), projectsCtrl.createProject);
+router.put('/projects/:id', uploadMemory.single('image'), projectsCtrl.updateProject);
+router.delete('/projects/:id', projectsCtrl.deleteProject);
+
+router.get('/services', servicesCtrl.listAdmin);
+router.post('/services', uploadMemory.single('image'), servicesCtrl.createService);
+router.put('/services/:id', uploadMemory.single('image'), servicesCtrl.updateService);
+router.delete('/services/:id', servicesCtrl.deleteService);
 
 module.exports = router;

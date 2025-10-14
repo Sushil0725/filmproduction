@@ -1,6 +1,8 @@
 const express = require('express');
 const { readText, readJSON } = require('../utils/fileStore');
 const config = require('../config');
+const projectsCtrl = require('../controllers/projects');
+const servicesCtrl = require('../controllers/services');
 
 const router = express.Router();
 
@@ -23,5 +25,9 @@ router.get('/json/:name', async (req, res) => {
     res.status(404).json({ error: 'Not found' });
   }
 });
+
+router.get('/projects', projectsCtrl.listPublic);
+router.get('/projects/:id', projectsCtrl.getPublicById);
+router.get('/services', servicesCtrl.listPublic);
 
 module.exports = router;

@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const config = require('./config');
 const { ensureDataDirs } = require('./utils/ensureDirs');
+const { initTables } = require('./models/init');
 
 const authRoutes = require('./routes/auth');
 const publicRoutes = require('./routes/public');
@@ -43,5 +44,9 @@ app.get('/healthz', (req, res) => res.json({ ok: true, env: config.env }));
 app.use('/api/auth', authRoutes);
 app.use('/api/public', publicRoutes);
 app.use('/api/admin', adminRoutes);
+
+initTables().catch((e) => {
+  console.error('Failed to initialize database tables:', e.message);
+});
 
 module.exports = { app };
