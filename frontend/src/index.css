@@ -81,3 +81,30 @@ body.intro-lock {
     transform: translateY(0);
   }
 }
+
+/* Performance optimizations for Projects section */
+.will-change-transform {
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Enhanced film grain for cinematic feel */
+.projects-grain {
+  background-image: 
+    radial-gradient(circle at 20% 50%, transparent 20%, rgba(255,255,255,0.02) 21%, rgba(255,255,255,0.02) 34%, transparent 35%, transparent),
+    linear-gradient(0deg, rgba(34,34,34,0.03) 50%, transparent 50%);
+  background-size: 4px 4px, 100% 2px;
+  animation: filmgrain 0.4s infinite;
+}
+
+/* Smooth transitions for cinematic feel */
+.cinematic-transition {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 3D transform optimizations */
+.preserve-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
