@@ -46,7 +46,8 @@ function Icon({ name, className = 'h-5 w-5' }) {
       );
     case 'services':
       return (
-        <svg viewBox="0 0 24 24" className={className}><path fill="currentColor" d="M14.7 6.3a1 1 0 0 1 1 0l2 1.2a1 1 0 0 1 .3 1.3l-1.3 2a1 1 0 0 1-1.2.4 7 7 0 1 1-3.8-3.8 1 1 0 0 1 .4-1.2l2-1.3a1 1 0 0 1 1.3.4z"/></svg>
+        <svg viewBox="0 0 24 24" className={className}><path fill="currentColor"  d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11z"/>
+  </svg>
       );
     case 'projects':
       return (
@@ -64,6 +65,10 @@ function Icon({ name, className = 'h-5 w-5' }) {
     case 'box':
       return (
         <svg viewBox="0 0 24 24" className={className}><path fill="currentColor" d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16zM12 4.26L18.74 8 12 11.74 5.26 8 12 4.26zM5 10.47l6 3.47v5.8l-6-3.43v-5.84zm8 9.27v-5.8l6-3.47v5.84l-6 3.43z"/></svg>
+      );
+      case 'todo':
+      return (
+        <svg viewBox="0 0 24 24" className={className}><path fill="currentColor"  d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1zM5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zM5.5 11a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zM1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zM2 10.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/></svg>
       );
       case 'menu':
       return (

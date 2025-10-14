@@ -9,7 +9,8 @@ export const sidebarSections = [
       { id: 'settings', label: 'News Manager', href: '/admin/settings', icon: 'news' },
       { id: 'admin', label: 'Admin', href: '/admin/admin', icon: 'admin' },
       { id: 'home', label: 'Home', href: '/admin/home', icon: 'home' },
-      { id: 'menu', label: 'Menu', href: '/admin/menu', icon: 'menu' }
+      { id: 'menu', label: 'Menu', href: '/admin/menu', icon: 'menu' },
+      { id: 'todo', label: 'Todo', href: '/admin/todo', icon: 'todo' },
     ]
   },
   {

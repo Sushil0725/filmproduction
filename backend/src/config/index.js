@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+require('./db');
+
 const ROOT_DIR = path.resolve(__dirname, '..'); // backend/src -> backend
 const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(ROOT_DIR, 'datas');
 
