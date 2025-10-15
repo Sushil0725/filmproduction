@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { projects } from '../../../data/projects';
 
 export default function Projects() {
-  const featured = projects.slice(0, 8);
+  const featured = projects.slice(0, 4);
 
   return (
     <section id="projects" className="py-16 relative z-10 bg-black">
@@ -43,7 +43,7 @@ export default function Projects() {
               className="relative group overflow-hidden bg-gray-900 flex flex-col"
             >
               {/* Image Container */}
-              <div className="relative w-full aspect-[3/2] overflow-hidden">
+              <div className="relative w-full aspect-[2/3] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
