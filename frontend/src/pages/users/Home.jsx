@@ -27,9 +27,7 @@ export default function Home() {
       <Intro />
       <Hero title={site?.title} tagline={site?.tagline} heroText={hero} />
       <RecentHighlights />
-      <About />
       <Services />
-      <LineProduction />
       <Projects />
       <Videos/>
       <GetStarted />

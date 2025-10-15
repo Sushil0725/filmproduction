@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
-  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -42,23 +40,11 @@ export default function Header() {
         </div>
         {/* Pill Navbar in Center */}
         <nav className={pillCls} aria-label="Primary">
-          {isHome ? (
-            <>
-              <a className={linkCls} href="#home" onClick={() => setOpen(false)}>Home</a>
-              <a className={linkCls} href="#line-production" onClick={() => setOpen(false)}>Line Production</a>
-              <a className={linkCls} href="#services" onClick={() => setOpen(false)}>Services</a>
-              <a className={linkCls} href="#projects" onClick={() => setOpen(false)}>Projects</a>
-              <a className={ctaCls} href="#get-started" onClick={() => setOpen(false)}>Get Started</a>
-            </>
-          ) : (
-            <>
-              <Link className={linkCls} to="/" onClick={() => setOpen(false)}>Home</Link>
-              <Link className={linkCls} to="/line-production" onClick={() => setOpen(false)}>Line Production</Link>
-              <Link className={linkCls} to="/services" onClick={() => setOpen(false)}>Services</Link>
-              <Link className={linkCls} to="/projects" onClick={() => setOpen(false)}>Projects</Link>
-              <Link className={ctaCls} to="/#get-started" onClick={() => setOpen(false)}>Get Started</Link>
-            </>
-          )}
+          <Link className={linkCls} to="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link className={linkCls} to="/services" onClick={() => setOpen(false)}>Services</Link>
+          <Link className={linkCls} to="/projects" onClick={() => setOpen(false)}>Projects</Link>
+          <Link className={linkCls} to="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
+          <Link className={ctaCls} to="/contact" onClick={() => setOpen(false)}>Get Started</Link>
         </nav>
         {/* Hamburger Menu */}
         <button
@@ -74,23 +60,11 @@ export default function Header() {
       {open && (
         <div className="mt-2 mx-auto w-full max-w-sm rounded-2xl border border-yellow-500/40 bg-black/85 backdrop-blur p-4">
           <div className="flex flex-col">
-            {isHome ? (
-              <>
-                <a className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" href="#home" onClick={() => setOpen(false)}>Home</a>
-                <a className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" href="#line-production" onClick={() => setOpen(false)}>Line Production</a>
-                <a className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" href="#services" onClick={() => setOpen(false)}>Services</a>
-                <a className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" href="#projects" onClick={() => setOpen(false)}>Projects</a>
-                <a className="mt-1 px-3 py-2 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black font-medium" href="#get-started" onClick={() => setOpen(false)}>Get Started</a>
-              </>
-            ) : (
-              <>
-                <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/" onClick={() => setOpen(false)}>Home</Link>
-                <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/line-production" onClick={() => setOpen(false)}>Line Production</Link>
-                <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/services" onClick={() => setOpen(false)}>Services</Link>
-                <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/projects" onClick={() => setOpen(false)}>Projects</Link>
-                <Link className="mt-1 px-3 py-2 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black font-medium" to="/#get-started" onClick={() => setOpen(false)}>Get Started</Link>
-              </>
-            )}
+            <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/" onClick={() => setOpen(false)}>Home</Link>
+            <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/services" onClick={() => setOpen(false)}>Services</Link>
+            <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/projects" onClick={() => setOpen(false)}>Projects</Link>
+            <Link className="px-3 py-2 rounded-xl text-yellow-100/90 hover:text-yellow-300 hover:bg-yellow-500/10" to="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
+            <Link className="mt-1 px-3 py-2 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black font-medium" to="/contact" onClick={() => setOpen(false)}>Get Started</Link>
           </div>
         </div>
       )}

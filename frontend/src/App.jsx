@@ -4,6 +4,7 @@ import Home from './pages/users/Home';
 import LineProductionPage from './pages/users/LineProductionPage';
 import ServicesPage from './pages/users/ServicesPage';
 import ProjectsPage from './pages/users/ProjectsPage';
+import GalleryPage from './pages/users/GalleryPage';
 import AboutPage from './pages/users/AboutPage';
 import Login from './pages/auth/Login';
 import Admin from './pages/admin/Admin';
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="line-production" element={<LineProductionPage />} />
           <Route path="services" element={<ServicesPage />} />
           <Route path="projects" element={<ProjectsPage />} />
+          <Route path="gallery" element={<GalleryPage />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}> 

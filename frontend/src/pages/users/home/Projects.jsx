@@ -11,7 +11,7 @@ export default function Projects() {
         {/* Header Section */}
         <div className="flex items-end justify-between flex-wrap gap-4">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-yellow-300">Projects</h2>
+            <h2 className="text-4xl md:text-4xl font-bold text-yellow-300">| Projects</h2>
             <p className="mt-2 text-yellow-100/80">
               Selected works across film, documentary, music, and art.
             </p>
@@ -24,7 +24,7 @@ export default function Projects() {
           </Link>
         </div>
 
-        {/* Responsive Masonry Grid */}
+      
         <div
           className="
             mt-10 
@@ -40,7 +40,7 @@ export default function Projects() {
           {featured.map((project, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden bg-gray-900 flex flex-col"
+              className="relative group overflow-hidden flex flex-col"
             >
               {/* Image Container */}
               <div className="relative w-full aspect-[2/3] overflow-hidden">
@@ -56,8 +56,8 @@ export default function Projects() {
 
               {/* Text */}
               <div className="mt-3">
-                <h3 className="text-xl font-bold text-yellow-300">{project.title}</h3>
-                <p className="text-yellow-50/80 text-sm mt-1">{project.subtitle}</p>
+                <h3 className="text-2xl font-bold text-yellow-300">{project.title}</h3>
+                <p className="text-yellow-50/80 mt-1">{project.subtitle}</p>
               </div>
             </div>
           ))}

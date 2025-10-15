@@ -12,12 +12,22 @@ export default function RecentHighlights() {
         
         {/* Left*/}
         
-        <div className="flex-1">
-          <img src={high1} alt="MB Pictures Team" className="w-[100%] h-[335px] " />
+        <div className="flex-1 relative group overflow-hidden">
+          <img src={high1} alt="MB Pictures Team" className="w-full h-[335px] object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 p-6 text-white">
+            <h3 className="text-3xl font-bold mb-2 uppercase tracking-wide">I KNOW WHAT YOU DID LAST SUMMER</h3>
+            <p className="text-lg font-medium">Now on Digital</p>
+          </div>
         </div>
         {/* Right*/}
-        <div className="flex-1">
-            <img src={high2} alt="MB Pictures Team" className="w-[100%] h-[335px] " />
+        <div className="flex-1 relative group overflow-hidden">
+            <img src={high2} alt="MB Pictures Team" className="w-full h-[335px] object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-6 text-white">
+              <h3 className="text-3xl font-bold mb-2 uppercase tracking-wide">FEATURED PRODUCTION</h3>
+              <p className="text-lg font-medium">Coming Soon</p>
+            </div>
         </div>
       </div>
     </section>
