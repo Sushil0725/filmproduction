@@ -162,7 +162,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
 // Services data
-const servicesData = [
+const fallbackServicesData = [
   "Film Production",
   "Documentaries",
   "Music Videos",
@@ -188,7 +188,21 @@ const serviceImages = [
 ];
 
 const Services = () => {
-  const items = servicesData;
+  const [items, setItems] = useState(fallbackServicesData);
+  const [images, setImages] = useState(serviceImages);
+  useEffect(() => {
+    fetch('/api/public/services')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => {
+        if (Array.isArray(data) && data.length) {
+          const titles = data.map((d) => d.title);
+          const imgs = data.map((d, i) => d.image_url || serviceImages[i % serviceImages.length]);
+          setItems(titles);
+          setImages(imgs);
+        }
+      })
+      .catch(() => {});
+  }, []);
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -273,7 +287,7 @@ const Services = () => {
         index: prevIndex,
         position: 'left',
         service: items[prevIndex],
-        image: serviceImages[prevIndex % serviceImages.length]
+        image: images[prevIndex % images.length]
       });
       
       // Current slide
@@ -281,7 +295,7 @@ const Services = () => {
         index: activeIndex,
         position: 'center',
         service: items[activeIndex],
-        image: serviceImages[activeIndex % serviceImages.length]
+        image: images[activeIndex % images.length]
       });
       
       // Next slide (with wrapping)
@@ -290,7 +304,7 @@ const Services = () => {
         index: nextIndex,
         position: 'right',
         service: items[nextIndex],
-        image: serviceImages[nextIndex % serviceImages.length]
+        image: images[nextIndex % images.length]
       });
     }
     

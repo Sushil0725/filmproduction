@@ -4,8 +4,8 @@ export const sidebarSections = [
     items: [
       { id: 'dashboard', label: 'Dashboard', href: '/admin', icon: 'chart' },
       { id: 'playground', label: 'Hero Manager', href: '/admin/playground', icon: 'app' },
-      { id: 'history', label: 'Services Manager', href: '/admin/history', icon: 'services' },
-      { id: 'starred', label: 'Projects Manager', href: '/admin/starred', icon: 'products' },
+      { id: 'services', label: 'Services Manager', href: '/admin/services', icon: 'services' },
+      { id: 'projects', label: 'Projects Manager', href: '/admin/projects', icon: 'products' },
       { id: 'settings', label: 'News Manager', href: '/admin/settings', icon: 'news' },
       { id: 'admin', label: 'Admin', href: '/admin/admin', icon: 'admin' },
       { id: 'home', label: 'Home', href: '/admin/home', icon: 'home' },

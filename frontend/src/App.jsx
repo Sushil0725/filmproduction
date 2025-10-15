@@ -17,6 +17,8 @@ import NotFound from './NotFound';
 import ProtectedRoute from './common/ProtectedRoute';
 import UserLayout from './layouts/users/UserLayout';
 import AdminLayout from './layouts/admin/AdminLayout.jsx';
+import ProjectsAdmin from './pages/admin/ProjectsAdmin.jsx';
+import ServicesAdmin from './pages/admin/ServicesAdmin.jsx';
 
 export default function App() {
   return (
@@ -36,6 +38,8 @@ export default function App() {
             <Route path="playground" element={<Playground />} />
             <Route path="history" element={<History />} />
             <Route path="starred" element={<Starred />} />
+            <Route path="projects" element={<ProjectsAdmin />} />
+            <Route path="services" element={<ServicesAdmin />} />
             <Route path="settings" element={<Settings />} />
             <Route path="models" element={<Models />} />
             <Route path="docs" element={<Docs />} />

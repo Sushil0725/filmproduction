@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../ProjectCard';
-import { projects } from '../../../data/projects';
+import { projects as fallbackProjects } from '../../../data/projects';
 
 export default function Projects() {
-  const featured = projects.slice(0, 6);
+  const [items, setItems] = useState(() => fallbackProjects.slice(0, 6));
+  useEffect(() => {
+    fetch('/api/public/projects?limit=6')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => {
+        if (Array.isArray(data) && data.length) setItems(data);
+      })
+      .catch(() => {});
+  }, []);
   return (
     <section id="projects" className="py-16 relative z-10 bg-black">
       <div className="mx-auto max-w-7xl px-4">
@@ -19,8 +27,8 @@ export default function Projects() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {featured.map((p) => (
-            <ProjectCard key={p.id} image={p.image} title={p.title} subtitle={p.subtitle} />
+          {items.map((p) => (
+            <ProjectCard key={p.id || p.title} image={p.image_url || p.image} title={p.title} subtitle={p.subtitle} />
           ))}
         </div>
 

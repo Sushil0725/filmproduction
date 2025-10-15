@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectCard from '../../components/users/ProjectCard';
-import { projects } from '../../data/projects';
+import { projects as fallbackProjects } from '../../data/projects';
 
 export default function ProjectsPage() {
+  const [items, setItems] = useState(() => fallbackProjects);
+  useEffect(() => {
+    fetch('/api/public/projects')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => {
+        if (Array.isArray(data) && data.length) setItems(data);
+      })
+      .catch(() => {});
+  }, []);
   return (
     <div className="bg-black text-yellow-50 min-h-screen">
       {/* Hero */}
@@ -22,8 +31,8 @@ export default function ProjectsPage() {
       {/* Projects Grid */}
       <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {projects.map((p) => (
-            <ProjectCard key={p.id} image={p.image} title={p.title} subtitle={p.subtitle} />
+          {items.map((p) => (
+            <ProjectCard key={p.id || p.title} image={p.image_url || p.image} title={p.title} subtitle={p.subtitle} />
           ))}
         </div>
       </section>
