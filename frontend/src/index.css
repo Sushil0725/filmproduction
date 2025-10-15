@@ -81,3 +81,10 @@ body.intro-lock {
     transform: translateY(0);
   }
 }
+
+:root {
+  --font-display: 'Oswald', 'Bebas Neue', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Source Sans 3', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Oswald', 'Bebas Neue', 'Helvetica Neue', Arial, sans-serif;
+  
+}

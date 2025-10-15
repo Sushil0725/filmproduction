@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Intro from '../../components/users/sections/Intro';
-import Hero from '../../components/users/sections/Hero';
-import About from '../../components/users/sections/About';
-import Services from '../../components/users/sections/Services';
-import LineProduction from '../../components/users/sections/LineProduction';
-import GetStarted from '../../components/users/sections/GetStarted';
-import Projects from '../../components/users/sections/Projects';
+import Intro from './home/Intro';
+import Hero from './home/Hero';
+import About from './home/About';
+import Services from './home/Services';
+import LineProduction from './home/LineProduction';
+import GetStarted from './home/GetStarted';
+import Projects from './home/Projects';
+import RecentHighlights from './home/RecentHighlights';
+import Videos from './home/Videos';
 
 export default function Home() {
   const [site, setSite] = useState(null);
@@ -24,10 +26,12 @@ export default function Home() {
     <div>
       <Intro />
       <Hero title={site?.title} tagline={site?.tagline} heroText={hero} />
+      <RecentHighlights />
       <About />
       <Services />
       <LineProduction />
       <Projects />
+      <Videos/>
       <GetStarted />
     </div>
   );

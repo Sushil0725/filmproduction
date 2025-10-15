@@ -74,6 +74,19 @@ export default function Hero({ title, tagline, heroText }) {
             </div>
           </div>
         </div>
+        {/* Scroll Down Indicator */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-yellow-400 animate-bounce">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-10 h-10"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </div>
       </div>
     </section>
   );
