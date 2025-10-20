@@ -1,17 +1,35 @@
 const express = require('express');
-const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
 const { requireAuth } = require('../middleware/auth');
-const { writeText, writeJSON, listBasenames, sanitizeName } = require('../utils/fileStore');
-const config = require('../config');
 
 const router = express.Router();
 
-// Protect all routes
+// Import new admin routes
+const projectsRouter = require('./admin/projects');
+const servicesRouter = require('./admin/services');
+const contentRouter = require('./admin/content');
+const uploadsRouter = require('./admin/uploads');
+const auditRouter = require('./admin/audit');
+const backupRouter = require('./admin/backup');
+
+// Apply authentication to all routes
 router.use(requireAuth);
 
-// Multer storage for uploads
+// Mount admin routes
+router.use('/projects', projectsRouter);
+router.use('/services', servicesRouter);
+router.use('/content', contentRouter);
+router.use('/uploads', uploadsRouter);
+router.use('/audit', auditRouter);
+router.use('/backup', backupRouter);
+
+// Legacy routes for backward compatibility
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
+const { writeText, writeJSON, listBasenames, sanitizeName } = require('../utils/fileStore');
+const config = require('../config');
+
+// Multer storage for legacy uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadDir = path.join(config.dataDir, 'uploads');
@@ -29,7 +47,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Save plain text content
+// Legacy routes (deprecated - use new API endpoints)
 router.put('/text/:name', express.text({ type: ['text/*', 'text/plain'], limit: '1mb' }), async (req, res) => {
   const name = req.params.name;
   const body = req.body;
@@ -42,7 +60,6 @@ router.put('/text/:name', express.text({ type: ['text/*', 'text/plain'], limit: 
   }
 });
 
-// Save JSON content
 router.put('/json/:name', async (req, res) => {
   const name = req.params.name;
   const obj = req.body && typeof req.body === 'object' ? req.body : {};
@@ -54,14 +71,12 @@ router.put('/json/:name', async (req, res) => {
   }
 });
 
-// Upload a file
 router.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'file required' });
   const fileUrl = `/uploads/${req.file.filename}`;
   res.json({ ok: true, filename: req.file.filename, url: fileUrl });
 });
 
-// List content
 router.get('/list', async (req, res) => {
   const [texts, jsons] = await Promise.all([
     listBasenames(config.dataDir, 'text', 'txt'),

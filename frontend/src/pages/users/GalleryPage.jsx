@@ -60,7 +60,7 @@ export default function GalleryPage() {
                 className="group cursor-pointer"
                 onClick={() => openLightbox(item)}
               >
-                <div className="relative w-full aspect-[4/3] overflow-hidden bg-zinc-900">
+                <div className="relative w-full aspect-[2/3] overflow-hidden bg-zinc-900">
                   <img
                     src={item.thumbnail}
                     alt={item.title}

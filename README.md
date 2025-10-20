@@ -107,8 +107,7 @@ Company info + interactive form + Google Map embed.
 | -------------- | ----------------------------------------------------------------------- |
 | **Frontend**   | React + Vite + Tailwind CSS                                             |
 | **Backend**    | Node.js + Express.js                                                    |
-| **Database**   | PostgreSQL                                                              |
-| **ORM**        | Prisma or Sequelize                                                     |
+| **Database**   | PostgreSQL   + cloudinary                                               |
 | **Auth**       | JWT-based login (Admin only)                                            |
 | **Deployment** | Vercel / Render / Railway / Neon DB                                     |
 | **CMS Logic**  | Custom CMS inside admin dashboard controlling frontend content via APIs |
@@ -174,6 +173,7 @@ mbpictures/
   * About, Services, Portfolio data
   * Add/edit blog/news items
   * Upload posters, media, etc.
+  * Store image in cloudinary
 
 All data is stored in **PostgreSQL** and served to the frontend through API routes.
 
@@ -224,6 +224,9 @@ Create `.env` in `backend/`:
 PORT=5000
 DATABASE_URL=postgresql://username:password@localhost:5432/mbpictures
 JWT_SECRET=your_jwt_secret
+#Cloudinary for images storage
+CLOUDINARY_API_KEY=692761693279597
+CLOUDINARY_API_SECRET=WDf1Xhc6tn8xDjxDBMe8iSeMJyM
 ```
 
 #### 4️⃣ Run Servers

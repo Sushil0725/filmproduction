@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useSidebar } from './SidebarProvider';
 import SidebarToggleButton from './SidebarToggleButton';
 import { sidebarSections, organization } from './menuData';
+import { useAuth } from '../../../context/AuthContext.jsx';
 
 function Icon({ name, className = 'h-5 w-5' }) {
   switch (name) {
@@ -78,12 +79,22 @@ function Icon({ name, className = 'h-5 w-5' }) {
       return (
         <svg viewBox="0 0 24 24" className={className}><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       );
+    case 'logout':
+      return (
+        <svg viewBox="0 0 24 24" className={className}><path fill="currentColor" d="M16 13v-2H7V8l-5 4 5 4v-3h9zm3-10H11a2 2 0 0 0-2 2v3h2V5h8v14h-8v-3H9v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+      );
     default:
       return null;
   }
 }
 
 function CollapsedRail() {
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+  function onLogout() {
+    logout();
+    navigate('/login', { replace: true });
+  }
   return (
     <div className="w-14 bg-black/60 border-r border-white/10 backdrop-blur h-screen fixed left-0 top-0 z-50 flex flex-col items-center py-3">
       <div className="h-10 w-10 rounded-md bg-white/10 flex items-center justify-center text-white">
@@ -102,8 +113,13 @@ function CollapsedRail() {
           </div>
         ))}
       </div>
-      <div className="mt-auto">
-        <div className="h-10 w-10 rounded-full bg-white/10" />
+      <div className="mt-auto group relative">
+        <button onClick={onLogout} className="h-10 w-10 flex items-center justify-center rounded-md text-white/80 hover:text-white hover:bg-white/10">
+          <Icon name="logout" />
+        </button>
+        <div className="pointer-events-none absolute left-12 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition bg-white text-black text-xs px-2 py-1 rounded shadow">
+          Logout
+        </div>
       </div>
     </div>
   );
@@ -111,37 +127,51 @@ function CollapsedRail() {
 
 function ExpandedPanel() {
   const { expanded } = useSidebar();
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+  function onLogout() {
+    logout();
+    navigate('/login', { replace: true });
+  }
   return (
     <div className={`fixed left-14 top-0 h-screen z-40 transition-all duration-300 ${expanded ? 'w-64' : 'w-0'} overflow-hidden bg-neutral-900/80 border-r border-white/10 backdrop-blur`}> 
-      <div className="px-4 py-3">
-        <div className="flex items-center justify-between">
-          <div className="min-w-0">
-            <div className="text-sm font-semibold truncate">{organization.name}</div>
-            <div className="text-xs text-white/60 truncate">{organization.plan}</div>
+      <div className="h-full flex flex-col">
+        <div className="px-4 py-3">
+          <div className="flex items-center justify-between">
+            <div className="min-w-0">
+              <div className="text-sm font-semibold truncate">{organization.name}</div>
+              <div className="text-xs text-white/60 truncate">{organization.plan}</div>
+            </div>
+            <SidebarToggleButton />
           </div>
-          <SidebarToggleButton />
+        </div>
+        <nav className="flex-1 px-2 pb-4 space-y-5 overflow-y-auto">
+          {sidebarSections.map(section => (
+            <div key={section.title}>
+              <div className="px-2 text-xs uppercase tracking-wider text-white/40 mb-2">{section.title}</div>
+              <ul className="space-y-1">
+                {section.items.map(item => (
+                  <li key={item.id}>
+                    <NavLink
+                      to={item.href}
+                      className={({ isActive }) => `flex items-center gap-3 px-3 py-2 rounded-md text-sm text-white/85 hover:bg-white/10 hover:text-white ${isActive ? 'bg-white/10 text-white' : ''}`}
+                    >
+                      <Icon name={item.icon} />
+                      <span className="truncate">{item.label}</span>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
+        <div className="px-4 py-3 border-t border-white/10">
+          <button onClick={onLogout} className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm text-white/85 hover:bg-white/10 hover:text-white">
+            <Icon name="logout" />
+            <span className="truncate">Logout</span>
+          </button>
         </div>
       </div>
-      <nav className="px-2 pb-4 space-y-5 overflow-y-auto h-[calc(100vh-52px)]">
-        {sidebarSections.map(section => (
-          <div key={section.title}>
-            <div className="px-2 text-xs uppercase tracking-wider text-white/40 mb-2">{section.title}</div>
-            <ul className="space-y-1">
-              {section.items.map(item => (
-                <li key={item.id}>
-                  <NavLink
-                    to={item.href}
-                    className={({ isActive }) => `flex items-center gap-3 px-3 py-2 rounded-md text-sm text-white/85 hover:bg-white/10 hover:text-white ${isActive ? 'bg-white/10 text-white' : ''}`}
-                  >
-                    <Icon name={item.icon} />
-                    <span className="truncate">{item.label}</span>
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
     </div>
   );
 }

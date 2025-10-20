@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon App.js",
     "start": "node App.js",
-    "checkdb": "node src/utils/checkTables.js"
+    "checkdb": "node src/utils/checkTables.js",
+    "migrate": "node src/utils/migrate.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -15,6 +16,7 @@
     "dotenv": "^16.6.1",
     "express": "^4.19.2",
     "express-rate-limit": "6.11.2",
+    "express-validator": "^7.0.1",
     "helmet": "6.2.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
