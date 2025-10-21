@@ -1,28 +1,27 @@
 export const sidebarSections = [
   {
+    title: 'Analytics',
+    items: [
+      { id: 'dashboard', label: 'Dashboard', href: '/admin/dashboard', icon: 'chart' },
+      { id: 'mediactrl', label: 'Media Control', href: '/admin/mediactrl', icon: 'home' },
+    
+    ]
+  },
+  {
     title: 'Management',
     items: [
-      { id: 'dashboard', label: 'Dashboard', href: '/admin', icon: 'chart' },
-      { id: 'playground', label: 'Hero Manager', href: '/admin/playground', icon: 'app' },
-      { id: 'history', label: 'Services Manager', href: '/admin/history', icon: 'services' },
-      { id: 'starred', label: 'Projects Manager', href: '/admin/starred', icon: 'products' },
-      { id: 'settings', label: 'News Manager', href: '/admin/settings', icon: 'news' },
-      { id: 'admin', label: 'Admin', href: '/admin/admin', icon: 'admin' },
-      { id: 'home', label: 'Home', href: '/admin/home', icon: 'home' },
-      { id: 'menu', label: 'Menu', href: '/admin/menu', icon: 'menu' },
-      { id: 'todo', label: 'Todo', href: '/admin/todo', icon: 'todo' },
+      { id: 'heromng', label: 'Hero Manager', href: '/admin/heromng', icon: 'app' },
+      { id: 'servicemng', label: 'Services Manager', href: '/admin/servicemng', icon: 'services' },
+      { id: 'projectmng', label: 'Projects Manager', href: '/admin/projectmng', icon: 'box' },
+      { id: 'gallerymng', label: 'Gallery Manager', href: '/admin/gallerymng', icon: 'book' },
+      { id: 'newsmng', label: 'News Manager', href: '/admin/newsmng', icon: 'news' },
+
     ]
   },
   {
-    title: 'Settings',
+    title: 'Setting',
     items: [
-      { id: 'models', label: 'Settings', href: '/admin/models', icon: 'box' }
-    ]
-  },
-  {
-    title: 'Media Manager',
-    items: [
-      { id: 'docs', label: 'Dashboard', href: '/admin/docs', icon: 'book' }
+      { id: 'setting', label: 'Settings', href: '/admin/setting', icon: 'settings' }
     ]
   }
 ];

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ServiceCard({ image, title, description, className = '' }) {
   return (
-    <div className={`service-card group relative aspect-[9/16] rounded-2xl overflow-hidden border border-yellow-500/20 bg-zinc-900 shadow-md transition-shadow hover:shadow-yellow-500/10 ${className}`}>
+    <div className={`service-card group relative aspect-[4/5] rounded-2xl overflow-hidden border border-yellow-500/20 bg-zinc-900 shadow-md transition-shadow hover:shadow-yellow-500/10 ${className}`}>
       {image ? (
         <img
           src={image}

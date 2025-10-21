@@ -98,7 +98,7 @@ function CollapsedRail() {
   return (
     <div className="w-14 bg-black/60 border-r border-white/10 backdrop-blur h-screen fixed left-0 top-0 z-50 flex flex-col items-center py-3">
       <div className="h-10 w-10 rounded-md bg-white/10 flex items-center justify-center text-white">
-        <Icon name="app" className="h-5 w-5" />
+       <h1 className='font-bold text-lg'> MB</h1>
       </div>
       <SidebarToggleButton className="mt-3" />
       <div className="mt-4 flex-1 flex flex-col items-center space-y-2">
@@ -156,7 +156,7 @@ function ExpandedPanel() {
                       to={item.href}
                       className={({ isActive }) => `flex items-center gap-3 px-3 py-2 rounded-md text-sm text-white/85 hover:bg-white/10 hover:text-white ${isActive ? 'bg-white/10 text-white' : ''}`}
                     >
-                      <Icon name={item.icon} />
+                    
                       <span className="truncate">{item.label}</span>
                     </NavLink>
                   </li>

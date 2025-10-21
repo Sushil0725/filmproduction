@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigationType } from 'react-router-dom';
 import Intro from './home/Intro';
 import Hero from './home/Hero';
 import About from './home/About';
@@ -12,6 +13,8 @@ import Videos from './home/Videos';
 export default function Home() {
   const [site, setSite] = useState(null);
   const [hero, setHero] = useState('');
+  const navType = useNavigationType();
+  const [showIntro, setShowIntro] = useState(false);
 
   useEffect(() => {
     fetch('/api/public/json/site').then(async (r) => {
@@ -22,9 +25,23 @@ export default function Home() {
     }).catch(() => {});
   }, []);
 
+  useEffect(() => {
+    let should = false;
+    try {
+      const played = sessionStorage.getItem('introPlayed') === '1';
+      should = !played && navType === 'POP';
+      if (should) {
+        sessionStorage.setItem('introPlayed', '1');
+      }
+    } catch (e) {
+      should = navType === 'POP';
+    }
+    setShowIntro(should);
+  }, [navType]);
+
   return (
     <div>
-      <Intro />
+      {showIntro && <Intro />}
       <Hero title={site?.title} tagline={site?.tagline} heroText={hero} />
       <RecentHighlights />
       <Services />
