@@ -1,5 +1,6 @@
 const express = require('express');
-const { requireAuth, requireAdminRole } = require('../../middleware/auth');
+const { requireAuth } = require('../../middleware/auth');
+const { requireAdminRole } = require('../../middleware/security');
 const { auditMiddleware } = require('../../middleware/audit');
 const BackupManager = require('../../utils/backup');
 const { logger } = require('../../middleware/logging');

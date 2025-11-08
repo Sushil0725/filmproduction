@@ -1,0 +1,412 @@
+[2025-10-21T09:57:54.510Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:57:54.520Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"10ms","ip":"::1"}
+[2025-10-21T09:57:54.520Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"10ms","ip":"::1"}
+[2025-10-21T09:57:54.529Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:57:54.534Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"5ms","ip":"::1"}
+[2025-10-21T09:57:54.535Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"5ms","ip":"::1"}
+[2025-10-21T09:57:59.837Z] [INFO] Request started {"method":"POST","url":"/api/admin/uploads/multiple","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:57:59.844Z] [INFO] Request completed {"method":"POST","url":"/uploads/multiple","statusCode":401,"duration":"7ms","ip":"::1"}
+[2025-10-21T09:57:59.847Z] [ERROR] Request failed {"method":"POST","url":"/uploads/multiple","statusCode":401,"duration":"7ms","ip":"::1"}
+[2025-10-21T09:59:51.316Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:51.319Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:51.319Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:51.328Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:51.330Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:51.332Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T09:59:51.332Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T09:59:51.333Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:51.333Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:51.341Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:51.342Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T09:59:51.342Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T09:59:52.233Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:52.234Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T09:59:52.235Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T09:59:52.240Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:52.241Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T09:59:52.242Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T09:59:53.185Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:53.187Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T09:59:53.188Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T09:59:53.199Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:53.202Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:53.202Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:58.961Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:58.964Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:58.965Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:58.972Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T09:59:58.975Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T09:59:58.976Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T10:00:03.693Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:03.694Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T10:00:03.697Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T10:00:03.705Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:03.706Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T10:00:03.707Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T10:00:05.681Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:05.685Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:05.689Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:05.702Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:05.705Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T10:00:05.706Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T10:00:06.817Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:06.827Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"10ms","ip":"::1"}
+[2025-10-21T10:00:06.832Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"10ms","ip":"::1"}
+[2025-10-21T10:00:06.860Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:06.864Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:06.867Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:08.763Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:08.774Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"11ms","ip":"::1"}
+[2025-10-21T10:00:08.783Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"11ms","ip":"::1"}
+[2025-10-21T10:00:08.793Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:08.811Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"18ms","ip":"::1"}
+[2025-10-21T10:00:08.813Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"18ms","ip":"::1"}
+[2025-10-21T10:00:15.873Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:15.879Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T10:00:15.885Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T10:00:15.894Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:15.898Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:15.899Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T10:00:16.703Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:16.705Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:00:16.706Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:00:16.718Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:16.724Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-21T10:00:16.726Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-21T10:00:17.678Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:17.689Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"10ms","ip":"::1"}
+[2025-10-21T10:00:17.694Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"10ms","ip":"::1"}
+[2025-10-21T10:00:17.703Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:00:17.705Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:00:17.706Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:20:31.044Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:20:31.046Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:20:31.046Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T10:20:31.050Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T10:20:31.051Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"1ms","ip":"::1"}
+[2025-10-21T10:20:31.052Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:20:01.166Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:01.169Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":200,"duration":"3ms","ip":"::1"}
+[2025-10-21T11:20:01.178Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:01.180Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:20:07.791Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.792Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.794Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.795Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:20:07.797Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T11:20:07.797Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T11:20:07.799Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-21T11:20:07.800Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-21T11:20:07.804Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.805Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:20:07.807Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.809Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:20:07.810Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:20:07.811Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:20:07.813Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:20:07.814Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:26:40.066Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:26:40.068Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T11:26:40.070Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T11:26:40.076Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:26:40.078Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:26:40.080Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:48:00.638Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:00.645Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"7ms","ip":"::1"}
+[2025-10-21T11:48:00.650Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"7ms","ip":"::1"}
+[2025-10-21T11:48:00.665Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:00.670Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"5ms","ip":"::1"}
+[2025-10-21T11:48:00.676Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:00.682Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"6ms","ip":"::1"}
+[2025-10-21T11:48:00.699Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"6ms","ip":"::1"}
+[2025-10-21T11:48:00.710Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:00.723Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"13ms","ip":"::1"}
+[2025-10-21T11:48:18.874Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:18.875Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:48:18.879Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:48:18.881Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:49:35.510Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:49:35.512Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:49:35.513Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:49:35.519Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:49:35.521Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:49:35.523Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:49:35.524Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:49:35.526Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:49:35.526Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:49:35.531Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:49:35.535Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:49:35.537Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T11:50:33.230Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:50:33.231Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:50:33.232Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:50:33.236Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:50:33.237Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:50:33.239Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:50:33.243Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:50:33.246Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:50:33.247Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:50:33.250Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:50:33.252Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:50:33.253Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:55:20.036Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:55:20.037Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:55:20.039Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T11:55:20.040Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T11:55:20.042Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T11:55:20.044Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T11:55:20.047Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:55:20.049Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:55:20.050Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T11:55:20.052Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T11:55:20.054Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T11:55:20.054Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:00:38.143Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:00:38.146Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:00:38.147Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:00:38.148Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:00:38.150Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:00:38.152Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:00:38.155Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:00:38.157Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:00:38.158Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:00:38.160Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:00:38.162Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:00:38.163Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:04:16.054Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:04:16.056Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:04:16.056Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:04:16.063Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:04:16.068Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:04:16.071Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:13:17.839Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:13:17.840Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:13:17.841Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:13:17.848Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:13:17.850Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:13:17.851Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:31:21.943Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:31:21.948Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:31:21.949Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:31:21.957Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:31:21.959Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:31:21.960Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:34:53.984Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:34:53.988Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:34:53.989Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:34:53.996Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:34:53.998Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:34:53.998Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:36:42.482Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:36:42.485Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:36:42.486Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:36:42.492Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:36:42.494Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:36:42.495Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:00.868Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:00.871Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:37:00.873Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:37:00.885Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:00.891Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:37:00.893Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:37:07.694Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:07.696Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:07.698Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:07.707Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:07.709Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:07.713Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:09.001Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:09.003Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:09.005Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:09.010Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:09.013Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:37:09.014Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:37:12.568Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:12.569Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:37:12.569Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:37:12.578Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:12.582Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:37:12.583Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T12:37:13.832Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:13.837Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:37:13.838Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:37:13.848Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:13.851Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:37:13.851Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:37:45.601Z] [INFO] Request started {"method":"PUT","url":"/api/admin/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:45.652Z] [INFO] Request completed {"method":"PUT","url":"/json/projects","statusCode":401,"duration":"51ms","ip":"::1"}
+[2025-10-21T12:37:45.652Z] [ERROR] Request failed {"method":"PUT","url":"/json/projects","statusCode":401,"duration":"51ms","ip":"::1"}
+[2025-10-21T12:37:58.640Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:58.642Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:58.644Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:58.646Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:37:58.648Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-21T12:37:58.651Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:58.652Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-21T12:37:58.654Z] [INFO] Request started {"method":"GET","url":"/api/public/json/projects","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:37:58.656Z] [INFO] Request completed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:37:58.657Z] [ERROR] Request failed {"method":"GET","url":"/json/projects","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:38:06.871Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:38:06.874Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:38:06.877Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:38:06.885Z] [INFO] Request started {"method":"GET","url":"/api/public/json/gallery","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:38:06.887Z] [INFO] Request completed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:38:06.888Z] [ERROR] Request failed {"method":"GET","url":"/json/gallery","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:49:28.899Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:49:28.902Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:49:28.902Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:49:28.910Z] [INFO] Request started {"method":"GET","url":"/api/public/json/news","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:49:28.915Z] [INFO] Request completed {"method":"GET","url":"/json/news","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:49:28.917Z] [ERROR] Request failed {"method":"GET","url":"/json/news","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T12:52:36.589Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:52:36.591Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:36.593Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:36.601Z] [INFO] Request started {"method":"GET","url":"/api/admin/uploads?category=images&page=1&limit=60","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:52:36.603Z] [INFO] Request completed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:36.605Z] [ERROR] Request failed {"method":"GET","url":"/uploads?category=images&page=1&limit=60","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:37.667Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:52:37.669Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:37.672Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T12:52:37.679Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T12:52:37.682Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T12:52:37.683Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"3ms","ip":"::1"}
+[2025-10-21T13:10:36.912Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:10:36.914Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:10:36.915Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:10:36.917Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:10:36.920Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"3ms","ip":"::1"}
+[2025-10-21T13:10:36.921Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:10:36.923Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:10:36.923Z] [ERROR] Request failed {"method":"GET","url":"/list","statusCode":401,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:10:36.927Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:10:36.929Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:11:06.581Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:11:06.583Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:11:06.584Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T13:11:06.585Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T13:11:06.587Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T13:11:06.588Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-21T13:11:06.590Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:11:06.591Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T13:11:06.592Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"1ms","ip":"::1"}
+[2025-10-21T13:11:06.594Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:11:06.596Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:11:06.597Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-21T13:40:41.032Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:40:41.034Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:40:41.037Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T13:40:41.038Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T13:40:41.044Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"10ms","ip":"::1"}
+[2025-10-21T13:40:41.046Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"10ms","ip":"::1"}
+[2025-10-21T13:40:41.052Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:40:41.057Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T13:40:41.058Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-21T13:40:41.065Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-21T13:40:41.068Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-21T13:40:41.070Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:25.501Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.505Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"4ms","ip":"::1"}
+[2025-10-22T06:21:25.510Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.511Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T06:21:25.522Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.524Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.525Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.527Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T06:21:25.528Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-22T06:21:25.529Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"6ms","ip":"::1"}
+[2025-10-22T06:21:25.531Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-22T06:21:25.532Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"7ms","ip":"::1"}
+[2025-10-22T06:21:25.534Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.536Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:25.536Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:25.543Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.545Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:25.546Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T06:21:25.548Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:25.548Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:54.375Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:54.377Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:54.377Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:54.388Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:54.391Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:54.393Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:54.394Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:54.396Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:54.398Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"5ms","ip":"::1"}
+[2025-10-22T06:21:54.407Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:54.410Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:54.412Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:55.271Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:55.273Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:55.274Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T06:21:55.286Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:55.294Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"8ms","ip":"::1"}
+[2025-10-22T06:21:55.297Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"8ms","ip":"::1"}
+[2025-10-22T06:21:58.571Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:58.574Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:58.575Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:58.583Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T06:21:58.586Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T06:21:58.587Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:39.187Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.188Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.191Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.192Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T07:02:39.200Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"13ms","ip":"::1"}
+[2025-10-22T07:02:39.202Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"13ms","ip":"::1"}
+[2025-10-22T07:02:39.207Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"19ms","ip":"::1"}
+[2025-10-22T07:02:39.209Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"19ms","ip":"::1"}
+[2025-10-22T07:02:39.213Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.216Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:39.219Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.223Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-22T07:02:39.225Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-22T07:02:39.226Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:39.229Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:39.231Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:40.095Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:40.096Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:40.098Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-22T07:02:40.099Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-22T07:02:40.100Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"4ms","ip":"::1"}
+[2025-10-22T07:02:40.104Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:40.107Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:40.110Z] [INFO] Request started {"method":"GET","url":"/api/public/json/service-categories","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T07:02:40.113Z] [INFO] Request completed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T07:02:40.115Z] [ERROR] Request failed {"method":"GET","url":"/json/service-categories","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T13:30:01.177Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.180Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.181Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.184Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"3ms","ip":"::1"}
+[2025-10-22T13:30:01.185Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"9ms","ip":"::1"}
+[2025-10-22T13:30:01.186Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"9ms","ip":"::1"}
+[2025-10-22T13:30:01.188Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"8ms","ip":"::1"}
+[2025-10-22T13:30:01.188Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"8ms","ip":"::1"}
+[2025-10-22T13:30:01.193Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.195Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-22T13:30:01.197Z] [INFO] Request started {"method":"GET","url":"/api/public/json/site","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.198Z] [INFO] Request started {"method":"GET","url":"/api/public/text/hero","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:01.199Z] [INFO] Request completed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T13:30:01.200Z] [ERROR] Request failed {"method":"GET","url":"/json/site","statusCode":404,"duration":"2ms","ip":"::1"}
+[2025-10-22T13:30:01.201Z] [INFO] Request completed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T13:30:01.202Z] [ERROR] Request failed {"method":"GET","url":"/text/hero","statusCode":404,"duration":"3ms","ip":"::1"}
+[2025-10-22T13:30:06.476Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:06.478Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-22T13:30:06.484Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:06.486Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"2ms","ip":"::1"}
+[2025-10-22T13:30:11.806Z] [INFO] Request started {"method":"POST","url":"/api/auth/login","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:11.822Z] [INFO] Request completed {"method":"POST","url":"/login","statusCode":200,"duration":"16ms","ip":"::1"}
+[2025-10-22T13:30:11.868Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:11.873Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:11.877Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":200,"duration":"4ms","ip":"::1"}
+[2025-10-22T13:30:11.884Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":200,"duration":"16ms","ip":"::1"}
+[2025-10-22T13:30:11.897Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+[2025-10-22T13:30:11.903Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":304,"duration":"6ms","ip":"::1"}
+[2025-10-22T13:30:29.874Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"}
+[2025-10-22T13:30:29.876Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"}
+[2025-10-22T13:30:29.877Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T13:30:29.880Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":304,"duration":"6ms","ip":"::1"}
+[2025-10-22T13:30:29.886Z] [INFO] Request started {"method":"GET","url":"/api/auth/me","ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"}
+[2025-10-22T13:30:29.887Z] [INFO] Request completed {"method":"GET","url":"/me","statusCode":304,"duration":"1ms","ip":"::1"}
+[2025-10-22T13:30:29.891Z] [INFO] Request started {"method":"GET","url":"/api/admin/list","ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"}
+[2025-10-22T13:30:29.896Z] [INFO] Request completed {"method":"GET","url":"/list","statusCode":304,"duration":"5ms","ip":"::1"}

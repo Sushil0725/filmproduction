@@ -75,23 +75,24 @@ const validateService = [
     .withMessage('Order index must be a non-negative integer')
 ];
 
-// Content validation rules
-const validateContent = [
-  body('key')
+// JSON file validation rules
+const validateJsonFile = [
+  body('filename')
     .trim()
     .isLength({ min: 1, max: 255 })
     .matches(/^[a-zA-Z0-9_-]+$/)
-    .withMessage('Key is required and must contain only alphanumeric characters, underscores, and hyphens'),
-  body('type')
-    .isIn(['text', 'json', 'html', 'markdown'])
-    .withMessage('Type must be one of: text, json, html, markdown'),
-  body('value')
+    .withMessage('Filename is required and must contain only alphanumeric characters, underscores, and hyphens'),
+  body('content')
     .notEmpty()
-    .withMessage('Value is required'),
-  body('metadata')
-    .optional()
-    .isObject()
-    .withMessage('Metadata must be an object')
+    .withMessage('Content is required')
+    .custom((value) => {
+      try {
+        JSON.parse(value);
+        return true;
+      } catch (error) {
+        throw new Error('Content must be valid JSON');
+      }
+    })
 ];
 
 // UUID parameter validation
@@ -150,7 +151,7 @@ const handleValidationErrors = (req, res, next) => {
 module.exports = {
   validateProject,
   validateService,
-  validateContent,
+  validateJsonFile,
   validateUUID,
   validatePagination,
   validateFileUpload,

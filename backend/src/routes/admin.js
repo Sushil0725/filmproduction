@@ -8,6 +8,9 @@ const projectsRouter = require('./admin/projects');
 const servicesRouter = require('./admin/services');
 const contentRouter = require('./admin/content');
 const uploadsRouter = require('./admin/uploads');
+const videosRouter = require('./admin/videos');
+const jsonFilesRouter = require('./admin/json-files');
+const todosRouter = require('./admin/todos');
 const auditRouter = require('./admin/audit');
 const backupRouter = require('./admin/backup');
 
@@ -19,6 +22,9 @@ router.use('/projects', projectsRouter);
 router.use('/services', servicesRouter);
 router.use('/content', contentRouter);
 router.use('/uploads', uploadsRouter);
+router.use('/videos', videosRouter);
+router.use('/json-files', jsonFilesRouter);
+router.use('/todos', todosRouter);
 router.use('/audit', auditRouter);
 router.use('/backup', backupRouter);
 
