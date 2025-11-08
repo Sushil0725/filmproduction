@@ -6,16 +6,18 @@ import ServicesPage from './pages/users/ServicesPage';
 import ProjectsPage from './pages/users/ProjectsPage';
 import GalleryPage from './pages/users/GalleryPage';
 import AboutPage from './pages/users/AboutPage';
+import Contact from './pages/users/Contact';
 import Login from './pages/auth/Login';
 import Admin from './pages/admin/Admin';
 import Settings from './pages/admin/Settings.jsx';
 import Dashboard from './pages/admin/Dashboard.jsx';
-import MediaControl from './pages/admin/MediaControl.jsx';
-import HeroManager from './pages/admin/HeroManager.jsx';
+import MediaManager from './pages/admin/MediaManager.jsx';
+import HomeManager from './pages/admin/HomeManager.jsx';
 import ServicesManager from './pages/admin/ServicesManager.jsx';
 import ProjectsManager from './pages/admin/ProjectsManager.jsx';
 import GalleryManager from './pages/admin/GalleryManager.jsx';
 import NewsManager from './pages/admin/NewsManager.jsx';
+import TodosManager from './pages/admin/TodosManager.jsx';
 import NotFound from './NotFound';
 import ProtectedRoute from './common/ProtectedRoute';
 import UserLayout from './layouts/users/UserLayout';
@@ -32,18 +34,20 @@ export default function App() {
           <Route path="services" element={<ServicesPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="gallery" element={<GalleryPage />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}> 
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Admin />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="mediactrl" element={<MediaControl />} />
-            <Route path="heromng" element={<HeroManager />} />
+            <Route path="mediactrl" element={<MediaManager />} />
+            <Route path="homemng" element={<HomeManager />} />
             <Route path="servicemng" element={<ServicesManager />} />
             <Route path="projectmng" element={<ProjectsManager />} />
             <Route path="gallerymng" element={<GalleryManager />} />
             <Route path="newsmng" element={<NewsManager />} />
+            <Route path="todos" element={<TodosManager />} />
             <Route path="setting" element={<Settings />} />
           </Route>
         </Route>
