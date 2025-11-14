@@ -30,7 +30,7 @@ const videos = [
 export default function Videos() {
   return (
     <section id="videos" className="py-20 relative z-10 bg-black">
-      <div className="mx-auto px-20">
+      <div className="mx-auto px-6 md:px-20">
         <h2 className="text-4xl justify-self-start font-bold text-yellow-400 mb-8 text-center">| Our Videos</h2>
         <div className="flex overflow-x-auto gap-8 pb-4">
           {videos.map((video) => (

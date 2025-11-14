@@ -311,7 +311,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 px-20 bg-black z-10 relative text-[#f5c518] overflow-hidden"
+      className="py-20 px-6 md:px-20 bg-black z-10 relative text-[#f5c518] overflow-hidden"
     >
       <h2 className="text-4xl justify-self-start font-bold text-center mb-10 text-[#f5c518]">| Our Services</h2>
       

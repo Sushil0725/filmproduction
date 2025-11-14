@@ -4,7 +4,6 @@ import Intro from './home/Intro';
 import Hero from './home/Hero';
 import About from './home/About';
 import Services from './home/Services';
-import LineProduction from './home/LineProduction';
 import GetStarted from './home/GetStarted';
 import Projects from './home/Projects';
 import RecentHighlights from './home/RecentHighlights';

@@ -7,7 +7,7 @@ import high2 from '../../../assets/high2.png'; // replace with your actual asset
 export default function RecentHighlights() {
   return (
     <section id="recent-highlights" className="py-7 relative z-10 bg-black">
-      <div className="mx-auto px-20 flex flex-col md:flex-row items-center md:items-stretch gap-7">
+      <div className="mx-auto px-6 md:px-20 flex flex-col md:flex-row items-center md:items-stretch gap-7">
         
         
         {/* Left*/}
