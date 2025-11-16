@@ -1,8 +1,89 @@
- 'use strict';
- const { app } = require('./src/app');
- const config = require('./src/config');
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+const config = require('./config');
+const { securityHeaders, sanitizeInput, apiLimiter } = require('./middleware/security');
 
- const port = config.port;
- app.listen(port, () => {
-   console.log(`API server listening on http://localhost:${port}`);
- });
+// Import routes
+const authRoutes = require('./routes/auth');
+
+// Initialize Express app
+const app = express();
+
+// Trust proxy (important for rate limiting and IP detection)
+app.set('trust proxy', 1);
+
+// Security middleware
+app.use(securityHeaders);
+
+// CORS configuration
+app.use(cors({
+  origin: config.corsOrigin === '*' ? '*' : config.corsOrigin.split(','),
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Body parsing middleware
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+// Input sanitization
+app.use(sanitizeInput);
+
+// Logging middleware
+if (config.env === 'development') {
+  app.use(morgan('dev'));
+} else {
+  app.use(morgan('combined'));
+}
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({
+    success: true,
+    status: 'ok',
+    timestamp: new Date().toISOString()
+  });
+});
+
+// API rate limiting (applied to all /api routes)
+app.use('/api', apiLimiter);
+
+// API Routes
+app.use('/api/auth', authRoutes);
+
+// 404 handler for API routes
+app.use('/api/*', (req, res) => {
+  res.status(404).json({
+    success: false,
+    error: 'API endpoint not found'
+  });
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+
+  // Don't leak error details in production
+  const message = config.env === 'development' 
+    ? err.message 
+    : 'Internal server error';
+
+  res.status(err.status || 500).json({
+    success: false,
+    error: message,
+    ...(config.env === 'development' && { stack: err.stack })
+  });
+});
+
+// Start server
+const PORT = config.port;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`📝 Environment: ${config.env}`);
+  console.log(`🔐 JWT expires in: ${config.jwtExpiresIn}`);
+  console.log(`✅ Health check: http://localhost:${PORT}/health`);
+});
+
+module.exports = app;
