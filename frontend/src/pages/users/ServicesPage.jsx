@@ -1,6 +1,14 @@
 import React from 'react';
 import ServiceCard from '../../components/users/ServiceCard';
 import { serviceCategories } from '../../data/serviceCategories';
+import preProdImg from '../../assets/services/pre_prod.jpg';
+import prodImg from '../../assets/services/prod.jpg';
+import postProdImg from '../../assets/services/post_prod.jpg';
+import distMarketImg from '../../assets/services/dist_market.jpg';
+import stdEquImg from '../../assets/services/std_equ.jpg';
+import talentImg from '../../assets/services/talent.jpg';
+import consltImg from '../../assets/services/conslt.jpg';
+
 
 export default function ServicesPage() {
   const categories = serviceCategories;
@@ -36,15 +44,32 @@ export default function ServicesPage() {
       <section className="py-10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-            {categories.map((c) => (
-              <a
-                key={c.id}
-                href={`#${c.id}`}
-                className="block focus:outline-none focus:ring-2 ring-[#f5c518]/60 rounded-2xl"
-              >
-                <ServiceCard title={c.name} description={c.summary} className="w-full" />
-              </a>
-            ))}
+            {(() => {
+              const images = {
+                'pre-production': preProdImg,
+                production: prodImg,
+                'post-production': postProdImg,
+                'distribution-marketing': distMarketImg,
+                'studio-equipment': stdEquImg,
+                'talent-creative': talentImg,
+                'consulting-support': consltImg,
+              };
+
+              return categories.map((c) => (
+                <a
+                  key={c.id}
+                  href={`#${c.id}`}
+                  className="block focus:outline-none focus:ring-2 ring-[#f5c518]/60 rounded-2xl"
+                >
+                  <ServiceCard
+                    title={c.name}
+                    description={c.summary}
+                    image={images[c.id]}
+                    className="w-full"
+                  />
+                </a>
+              ));
+            })()}
           </div>
         </div>
       </section>
