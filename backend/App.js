@@ -17,12 +17,22 @@ app.set('trust proxy', 1);
 app.use(securityHeaders);
 
 // CORS configuration
-app.use(cors({
-  origin: config.corsOrigin === '*' ? '*' : config.corsOrigin.split(','),
+const corsOptions = {
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
-}));
+};
+
+if (config.corsOrigin === '*') {
+  // For development: allow all origins
+  corsOptions.origin = (origin, callback) => {
+    callback(null, true);
+  };
+} else {
+  corsOptions.origin = config.corsOrigin.split(',').map(origin => origin.trim());
+}
+
+app.use(cors(corsOptions));
 
 // Body parsing middleware
 app.use(express.json({ limit: '10mb' }));

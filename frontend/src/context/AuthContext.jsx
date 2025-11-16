@@ -25,18 +25,30 @@ export function AuthProvider({ children }) {
   }, [token]);
 
   async function login(username, password) {
-    const res = await fetch('/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password }),
-    });
-    if (!res.ok) return false;
-    const data = await res.json();
-    if (data?.token) {
-      setToken(data.token);
-      return true;
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      
+      const data = await res.json();
+      
+      if (!res.ok) {
+        // Return error message if available
+        return { success: false, error: data?.error || 'Login failed' };
+      }
+      
+      if (data?.token) {
+        setToken(data.token);
+        return { success: true };
+      }
+      
+      return { success: false, error: 'Invalid response from server' };
+    } catch (error) {
+      console.error('Login error:', error);
+      return { success: false, error: 'Network error. Please check if the server is running.' };
     }
-    return false;
   }
 
   function logout() {

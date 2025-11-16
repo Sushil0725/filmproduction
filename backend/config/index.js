@@ -13,8 +13,6 @@ module.exports = {
   port: parseInt(process.env.PORT || '4000', 10),
   jwtSecret: process.env.JWT_SECRET || 'change-me',
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '2h',
-  adminUsername: process.env.ADMIN_USERNAME || 'admin',
-  adminPassword: process.env.ADMIN_PASSWORD || 'admin',
   adminPasswordHash: process.env.ADMIN_PASSWORD_HASH || null,
   corsOrigin: process.env.CORS_ORIGIN || '*',
   dataDir: DATA_DIR,

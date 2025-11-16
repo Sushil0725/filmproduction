@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const pool = require('../config/db');
 const config = require('../config');
+const { comparePassword } = require('../utils/passwordUtils');
 
 /**
  * Admin login
@@ -30,10 +31,7 @@ async function login(req, res) {
 
     const admin = result.rows[0];
 
-    // Check password
-    // Support both hashed and plain text passwords (for migration)
-    let passwordValid = false;
-    
+    // Check password using bcrypt
     if (!admin.password) {
       return res.status(401).json({
         success: false,
@@ -41,13 +39,9 @@ async function login(req, res) {
       });
     }
     
-    if (admin.password.startsWith('$2a$') || admin.password.startsWith('$2b$')) {
-      // Bcrypt hash
-      passwordValid = await bcrypt.compare(password, admin.password);
-    } else {
-      // Plain text (for existing data - should be migrated)
-      passwordValid = password === admin.password;
-    }
+    // Verify password using bcrypt
+    // Passwords must be hashed with bcrypt
+    const passwordValid = await comparePassword(password, admin.password);
 
     if (!passwordValid) {
       return res.status(401).json({

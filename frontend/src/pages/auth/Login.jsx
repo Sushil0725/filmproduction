@@ -13,12 +13,13 @@ export default function Login() {
   async function onSubmit(e) {
     e.preventDefault();
     setError('');
-    const ok = await login(username, password);
-    if (ok) {
+    
+    const result = await login(username, password);
+    if (result?.success) {
       const redirectTo = location.state?.from || '/admin';
       navigate(redirectTo, { replace: true });
     } else {
-      setError('Invalid credentials');
+      setError(result?.error || 'Invalid credentials');
     }
   }
 
