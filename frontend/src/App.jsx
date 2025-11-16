@@ -8,7 +8,6 @@ import GalleryPage from './pages/users/GalleryPage';
 import AboutPage from './pages/users/AboutPage';
 import Contact from './pages/users/Contact';
 import Login from './pages/auth/Login';
-import Admin from './pages/admin/Admin';
 import Settings from './pages/admin/Settings.jsx';
 import Dashboard from './pages/admin/Dashboard.jsx';
 import MediaManager from './pages/admin/MediaManager.jsx';
@@ -39,7 +38,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}> 
           <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<Admin />} />
+            <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="mediactrl" element={<MediaManager />} />
             <Route path="homemng" element={<HomeManager />} />

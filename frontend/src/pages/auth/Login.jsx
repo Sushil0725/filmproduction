@@ -16,7 +16,7 @@ export default function Login() {
     
     const result = await login(username, password);
     if (result?.success) {
-      const redirectTo = location.state?.from || '/admin';
+      const redirectTo = location.state?.from || '/admin/dashboard';
       navigate(redirectTo, { replace: true });
     } else {
       setError(result?.error || 'Invalid credentials');
