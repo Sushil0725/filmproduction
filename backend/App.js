@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const morgan = require('morgan');
 const config = require('./config');
@@ -6,6 +7,7 @@ const { securityHeaders, sanitizeInput, apiLimiter } = require('./middleware/sec
 
 // Import routes
 const authRoutes = require('./routes/auth');
+const mediaRoutes = require('./routes/media');
 
 // Initialize Express app
 const app = express();
@@ -57,11 +59,15 @@ app.get('/health', (req, res) => {
   });
 });
 
+// Static file serving for uploads
+app.use('/uploads', express.static(path.join(config.dataDir, 'uploads')));
+
 // API rate limiting (applied to all /api routes)
 app.use('/api', apiLimiter);
 
 // API Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/admin/media', mediaRoutes);
 
 // 404 handler for API routes
 app.use('/api/*', (req, res) => {
@@ -85,6 +91,12 @@ app.use((err, req, res, next) => {
     error: message,
     ...(config.env === 'development' && { stack: err.stack })
   });
+});
+
+// Initialize media table on startup
+const { createMediaTable } = require('./utils/createMediaTable');
+createMediaTable().catch(err => {
+  console.error('⚠️ Warning: Could not initialize media table:', err.message);
 });
 
 // Start server

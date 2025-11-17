@@ -5,8 +5,8 @@ dotenv.config();
 
 require('./db');
 
-const ROOT_DIR = path.resolve(__dirname, '..'); // backend/src -> backend
-const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(ROOT_DIR, 'datas');
+const ROOT_DIR = path.resolve(__dirname, '..'); // backend/config -> backend
+const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(ROOT_DIR, 'src', 'datas');
 
 module.exports = {
   env: process.env.NODE_ENV || 'development',

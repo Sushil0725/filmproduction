@@ -58,7 +58,19 @@ export function AuthProvider({ children }) {
   async function authFetch(input, init = {}) {
     const headers = new Headers(init.headers || {});
     if (token) headers.set('Authorization', `Bearer ${token}`);
-    return fetch(input, { ...init, headers });
+    const response = await fetch(input, { ...init, headers });
+    
+    // Handle token expiration
+    if (response.status === 401) {
+      // Clear token and redirect to login
+      setToken('');
+      // Check if we're not already on the login page
+      if (window.location.pathname !== '/login') {
+        window.location.href = '/login';
+      }
+    }
+    
+    return response;
   }
 
   const value = useMemo(() => ({ token, user, isAuthenticated, login, logout, authFetch }), [token, user, isAuthenticated]);

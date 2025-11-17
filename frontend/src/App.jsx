@@ -10,7 +10,7 @@ import Contact from './pages/users/Contact';
 import Login from './pages/auth/Login';
 import Settings from './pages/admin/Settings.jsx';
 import Dashboard from './pages/admin/Dashboard.jsx';
-import MediaManager from './pages/admin/MediaManager.jsx';
+import MediaControl from './pages/admin/MediaControl.jsx';
 import HomeManager from './pages/admin/HomeManager.jsx';
 import ServicesManager from './pages/admin/ServicesManager.jsx';
 import ProjectsManager from './pages/admin/ProjectsManager.jsx';
@@ -40,7 +40,7 @@ export default function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="mediactrl" element={<MediaManager />} />
+            <Route path="mediactrl" element={<MediaControl />} />
             <Route path="homemng" element={<HomeManager />} />
             <Route path="servicemng" element={<ServicesManager />} />
             <Route path="projectmng" element={<ProjectsManager />} />

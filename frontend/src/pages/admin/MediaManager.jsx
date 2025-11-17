@@ -767,7 +767,6 @@ function PreviewModal({ item, onClose }) {
     </div>
   );
 }
-
 // Helper function for YouTube thumbnails
 function getYouTubeThumbnail(url) {
   try {
@@ -777,3 +776,4 @@ function getYouTubeThumbnail(url) {
     return null;
   }
 }
+
