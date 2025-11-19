@@ -26,6 +26,10 @@ function extractYouTubeId(url) {
  */
 async function uploadMedia(req, res) {
   try {
+    // Normalize single file uploads to array
+    if (req.file && !req.files) {
+      req.files = [req.file];
+    }
     // Check if this is a YouTube URL upload
     if (req.body.youtubeUrl) {
       const youtubeUrl = req.body.youtubeUrl.trim();
@@ -282,9 +286,59 @@ async function deleteMedia(req, res) {
   }
 }
 
+/**
+ * Upload a single file and return a simplified response with { url }
+ * Supports either multipart single file (field name: "file") or JSON body with youtubeUrl
+ */
+async function uploadSingleReturnUrl(req, res) {
+  try {
+    // If JSON YouTube URL
+    if (req.body && req.body.youtubeUrl) {
+      const youtubeUrl = req.body.youtubeUrl.trim();
+      const title = req.body.title || 'YouTube Video';
+      const videoId = extractYouTubeId(youtubeUrl);
+      if (!videoId) {
+        return res.status(400).json({ success: false, error: 'Invalid YouTube URL' });
+      }
+      const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+      const result = await pool.query(
+        `INSERT INTO media (filename, filetype, fileurl, updated_at)
+         VALUES ($1, $2, $3, NOW()) RETURNING *`,
+        [title, 'video', watchUrl]
+      );
+      return res.status(201).json({ success: true, url: result.rows[0].fileurl });
+    }
+
+    // Normalize single file
+    if (req.file && !req.files) {
+      req.files = [req.file];
+    }
+    if (!req.files || req.files.length === 0) {
+      return res.status(400).json({ success: false, error: 'No file uploaded' });
+    }
+
+    const file = req.files[0];
+    let fileType = 'other';
+    if (file.mimetype.startsWith('image/')) fileType = 'image';
+    else if (file.mimetype.startsWith('video/')) fileType = 'video';
+    const folder = fileType === 'video' ? 'videos' : 'images';
+    const fileUrl = `/uploads/${folder}/${file.filename}`;
+    const result = await pool.query(
+      `INSERT INTO media (filename, filetype, fileurl, updated_at)
+       VALUES ($1, $2, $3, NOW()) RETURNING *`,
+      [file.filename, fileType, fileUrl]
+    );
+    return res.status(201).json({ success: true, url: result.rows[0].fileurl });
+  } catch (error) {
+    console.error('uploadSingleReturnUrl error:', error);
+    res.status(500).json({ success: false, error: 'Failed to upload' });
+  }
+}
+
 module.exports = {
   uploadMedia,
   getAllMedia,
   getMediaById,
-  deleteMedia
+  deleteMedia,
+  uploadSingleReturnUrl
 };

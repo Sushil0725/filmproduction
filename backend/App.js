@@ -8,6 +8,12 @@ const { securityHeaders, sanitizeInput, apiLimiter } = require('./middleware/sec
 // Import routes
 const authRoutes = require('./routes/auth');
 const mediaRoutes = require('./routes/media');
+const contentRoutes = require('./routes/content');
+const servicesRoutes = require('./routes/services');
+const projectsRoutes = require('./routes/projects');
+const videosRoutes = require('./routes/videos');
+const todosRoutes = require('./routes/todos');
+const uploadRoute = require('./routes/upload');
 
 // Initialize Express app
 const app = express();
@@ -68,6 +74,12 @@ app.use('/api', apiLimiter);
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/admin/media', mediaRoutes);
+app.use('/api', contentRoutes); // /public/* and /admin/json|text|list
+app.use('/api/admin/services', servicesRoutes);
+app.use('/api/admin/projects', projectsRoutes);
+app.use('/api/admin/videos', videosRoutes);
+app.use('/api/admin/todos', todosRoutes);
+app.use('/api/admin/upload', uploadRoute);
 
 // 404 handler for API routes
 app.use('/api/*', (req, res) => {
