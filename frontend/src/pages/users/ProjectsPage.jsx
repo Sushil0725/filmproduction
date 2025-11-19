@@ -1,10 +1,36 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import ProjectCard from '../../components/users/ProjectCard';
-import { projects, projectTypes } from '../../data/projectmanage';
 
 export default function ProjectsPage() {
   const [search, setSearch] = useState('');
   const [selectedTypes, setSelectedTypes] = useState(new Set());
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [types, setTypes] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+    const fetchProjects = async () => {
+      setLoading(true);
+      try {
+        const params = new URLSearchParams({ page: '1', limit: '100' });
+        const r = await fetch(`/api/public/projects?${params.toString()}`);
+        if (mounted && r.ok) {
+          const data = await r.json();
+          const list = Array.isArray(data?.data?.projects) ? data.data.projects : [];
+          setItems(list);
+          const genreSet = new Set(list.map(p => (p.genre || 'Other')));
+          setTypes(Array.from(genreSet));
+        }
+      } catch (e) {
+        // ignore
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    };
+    fetchProjects();
+    return () => { mounted = false; };
+  }, []);
 
   const toggleType = (type) => {
     setSelectedTypes((prev) => {
@@ -23,21 +49,21 @@ export default function ProjectsPage() {
   const normalize = (s) => (s || '').toLowerCase();
 
   const filteredProjects = useMemo(() => {
-    let filtered = projects;
+    let filtered = items;
 
     if (selectedTypes.size > 0) {
-      filtered = filtered.filter((p) => selectedTypes.has(p.type));
+      filtered = filtered.filter((p) => selectedTypes.has(p.genre || 'Other'));
     }
 
     const q = normalize(search);
     if (q) {
       filtered = filtered.filter(
-        (p) => normalize(p.title).includes(q) || normalize(p.subtitle).includes(q)
+        (p) => normalize(p.title).includes(q) || normalize(p.description).includes(q)
       );
     }
 
     return filtered;
-  }, [search, selectedTypes]);
+  }, [items, search, selectedTypes]);
 
   return (
     <div className="bg-black text-yellow-50 min-h-screen">
@@ -76,7 +102,7 @@ export default function ProjectsPage() {
                 <button onClick={clearFilters} className="text-xs text-yellow-200/80 hover:text-yellow-100 underline">Clear</button>
               </div>
               <div className="max-h-[60vh] overflow-auto pr-1 space-y-2">
-                {projectTypes.map((type) => (
+                {types.map((type) => (
                   <label key={type} className="flex items-center gap-2">
                     <input
                       type="checkbox"
@@ -101,7 +127,7 @@ export default function ProjectsPage() {
                 className="w-full bg-zinc-900/60 border border-yellow-500/30 p-2 text-yellow-50 placeholder:text-yellow-100/50 focus:outline-none focus:ring-1 focus:ring-yellow-500/60"
               />
               <div className="grid grid-cols-2 gap-2">
-                {projectTypes.map((type) => (
+                {types.map((type) => (
                   <label key={type} className="flex items-center gap-2 text-sm">
                     <input
                       type="checkbox"
@@ -120,7 +146,7 @@ export default function ProjectsPage() {
           <div className="px-4 lg:pl-[280px]">
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-10">
               {filteredProjects.map((p) => (
-                <ProjectCard key={p.id} image={p.image} title={p.title} subtitle={p.subtitle} />
+                <ProjectCard key={p.id} image={p.thumbnail_url} title={p.title} subtitle={p.genre || p.year || ''} />
               ))}
             </div>
             {filteredProjects.length === 0 && (
